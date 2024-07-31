@@ -13,6 +13,7 @@ CSS3
 To view this project locally, follow these steps:
 
 Clone the repository: git clone https://github.com/Usman-Tech-Ali/Music-Website.git
+
 Run index.html file to view the website
 
 # Contributing
