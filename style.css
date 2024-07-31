@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+.header {
+  background-color: #270082;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  color: white;
+  position: fixed;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+.left {
+  margin-left: 10px;
+  font-size: 130%;
+}
+.right {
+  margin-right: 10px;
+}
+.right ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+.header ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.3s ease-in-out;
+}
+.first {
+  position: absolute;
+  margin-top: 15vh;
+  background-image: url(hero_image.png);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  text-align: center;
+  gap: 35px;
+}
+
+.first h1 {
+  font-size: 94px;
+  margin-bottom: 10px;
+}
+
+.first h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.first p {
+  margin: 0 20px 0 20px;
+}
+.second {
+  position: absolute;
+  margin-top: 115vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #281154;
+  color: white;
+}
+.second-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.second-container h3 {
+  margin: 0 20px 0 20px;
+}
+.second-container img {
+  max-width: 100%;
+}
+
+.third-container img {
+  max-width: 100%;
+}
+
+.btn1 {
+  height: 6vh;
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  background-color: red;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+
+.third {
+  position: absolute;
+  margin-top: 295vh;
+}
+
+.third-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.third-container p {
+  margin: 0 20px 0 20px;
+}
+
+.btn2 {
+  background-color: #270082;
+  color: white;
+  border: none;
+  transition: 0.2s ease-in-out;
+  height: 5vh;
+  padding: 10px 15px;
+}
+
+.fourth {
+  position: absolute;
+  margin-top: 445vh;
+  background-image: url(video.png);
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.fourth-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 40px;
+  margin-top: 200px;
+}
+
+.fourth-container p {
+  margin: 0 20px 0 20px;
+}
+
+.fifth {
+  position: absolute;
+  margin-top: 555vh;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.fifth .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 20px 0 px;
+}
+
+.btn3 {
+  background-color: #270082;
+  color: white;
+  width: 15%;
+  padding: 10px;
+}
+
+footer {
+  position: absolute;
+  margin-top: 620vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.upper {
+  display: flex;
+  background-color: #1b0058;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 20px;
+  color: white;
+}
+
+.upper h4 {
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.lower {
+  background-color: #270082;
+  padding: 25px 15px;
+  text-align: center;
+  color: white;
+}
+
+@media (width < 450px) {
+  .header {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .first {
+    max-width: 100%;
+  }
+  .img2 img {
+    max-width: 100%;
+  }
+
+  .second-container {
+    max-width: 100%;
+  }
+
+  .fifth img {
+    max-width: 100%;
+  }
+}
